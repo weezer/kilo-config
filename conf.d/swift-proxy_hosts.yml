@@ -1,0 +1,27 @@
+## DO NOT WRITE TO THIS FILE, CHANGES WILL BE LOST!
+---
+swift-proxy_hosts:
+  swift1:
+    ip: 172.29.236.140
+    container_vars:
+      swift_proxy_vars:
+        limit_container_types: swift_proxy
+        read_affinity: "r1=100"
+        write_affinity: "r1"
+        write_affinity_node_count: "1 * replicas"
+  swift3:
+    ip: 172.29.236.142
+    container_vars:
+      swift_proxy_vars:
+        limit_container_types: swift_proxy
+        read_affinity: "r1=100"
+        write_affinity: "r1"
+        write_affinity_node_count: "1 * replicas"
+  swift2:
+    ip: 172.29.236.141
+    container_vars:
+      swift_proxy_vars:
+        limit_container_types: swift_proxy
+        read_affinity: "r1=100"
+        write_affinity: "r1"
+        write_affinity_node_count: "1 * replicas"

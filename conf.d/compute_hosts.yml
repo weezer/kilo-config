@@ -1,0 +1,7 @@
+## DO NOT WRITE TO THIS FILE, CHANGES WILL BE LOST!
+---
+compute_hosts:
+  compute1:
+    ip: 172.29.236.120
+  compute2:
+    ip: 172.29.236.121

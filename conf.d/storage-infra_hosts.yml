@@ -1,0 +1,7 @@
+## DO NOT WRITE TO THIS FILE, CHANGES WILL BE LOST!
+---
+storage-infra_hosts:
+  cinder2:
+    ip: 172.29.236.131
+  cinder1:
+    ip: 172.29.236.130

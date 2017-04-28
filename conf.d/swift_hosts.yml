@@ -1,0 +1,24 @@
+## DO NOT WRITE TO THIS FILE, CHANGES WILL BE LOST!
+---
+swift_hosts:
+  swift1:
+    ip: 172.29.236.140
+    container_vars:
+      swift_vars:
+        limit_container_types: swift
+        zone: 0
+        region: 1
+  swift3:
+    ip: 172.29.236.142
+    container_vars:
+      swift_vars:
+        limit_container_types: swift
+        zone: 0
+        region: 1
+  swift2:
+    ip: 172.29.236.141
+    container_vars:
+      swift_vars:
+        limit_container_types: swift
+        zone: 0
+        region: 1

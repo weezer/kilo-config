@@ -1,0 +1,9 @@
+## DO NOT WRITE TO THIS FILE, CHANGES WILL BE LOST!
+---
+repo-infra_hosts:
+  infra1:
+    ip: 172.29.236.100
+  infra2:
+    ip: 172.29.236.101
+  infra3:
+    ip: 172.29.236.102

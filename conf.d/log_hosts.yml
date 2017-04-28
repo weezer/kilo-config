@@ -1,0 +1,5 @@
+## DO NOT WRITE TO THIS FILE, CHANGES WILL BE LOST!
+---
+log_hosts:
+  logging1:
+    ip: 172.29.236.110

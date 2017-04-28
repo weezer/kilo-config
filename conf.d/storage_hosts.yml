@@ -1,0 +1,23 @@
+## DO NOT WRITE TO THIS FILE, CHANGES WILL BE LOST!
+---
+storage_hosts:
+  cinder2:
+    ip: 172.29.236.131
+    container_vars:
+      cinder_backends:
+        limit_container_types: cinder_volume
+        lvm:
+          volume_group: cinder-volumes
+          volume_driver: cinder.volume.drivers.lvm.LVMVolumeDriver
+          volume_backend_name: LVM_iSCSI
+          iscsi_ip_address: "172.29.236.131"
+  cinder1:
+    ip: 172.29.236.130
+    container_vars:
+      cinder_backends:
+        limit_container_types: cinder_volume
+        lvm:
+          volume_group: cinder-volumes
+          volume_driver: cinder.volume.drivers.lvm.LVMVolumeDriver
+          volume_backend_name: LVM_iSCSI
+          iscsi_ip_address: "172.29.236.130"
