@@ -13,6 +13,35 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
+
+## Ceilometer Options
+ceilometer_db_type: mongodb
+ceilometer_db_ip: localhost
+ceilometer_db_port: 27017
+swift_ceilometer_enabled: False
+heat_ceilometer_enabled: False
+cinder_ceilometer_enabled: False
+glance_ceilometer_enabled: False
+nova_ceilometer_enabled: False
+
+## Glance Options
+# Set glance_default_store to "swift" if using Cloud Files or swift backend
+# or "rbd" if using ceph backend; the latter will trigger ceph to get
+# installed on glance
+glance_default_store: file
+
+# `internalURL` will cause glance to speak to swift via ServiceNet, use
+# `publicURL` to communicate with swift over the public network
+glance_swift_store_endpoint_type: internalURL
+
+# services running behind Apache (currently, Horizon and Keystone).
+ssl_protocol: "ALL -SSLv2 -SSLv3"
+# Cipher suite string from https://hynek.me/articles/hardening-your-web-servers-ssl-ciphers/
+ssl_cipher_suite: "ECDH+AESGCM:DH+AESGCM:ECDH+AES256:DH+AES256:ECDH+AES128:DH+AES:ECDH+3DES:DH+3DES:RSA+AESGCM:RSA+AES
+:RSA+3DES:!aNULL:!MD5:!DSS"
+# To override for Keystone only:
+
+
 # SQLAlchemy/Olso Thread Pool Settings
 rpc_conn_pool_size: 180
 rpc_response_timeout: 180
